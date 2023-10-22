@@ -18,8 +18,11 @@ background: linear-gradient(0deg, rgba(43,43,47,1) 0%, rgba(43,43,58,1) 76%, rgb
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8rem;
-    margin: 4rem 4rem 0rem 4rem;
+    padding: 4rem;
+    margin: 8rem 4rem 0rem 4rem;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .blink-soft {
@@ -213,6 +216,17 @@ background: linear-gradient(0deg, rgba(43,43,47,1) 0%, rgba(43,43,58,1) 76%, rgb
   margin: -4px;
 }
 
-.intro_div img {
+.arrow img {
+  margin-top: 2rem;
+  margin-left: 2rem;
   width: 1rem;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
