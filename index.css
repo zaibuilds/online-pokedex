@@ -212,3 +212,7 @@ background: linear-gradient(0deg, rgba(43,43,47,1) 0%, rgba(43,43,58,1) 76%, rgb
 .pixel-corners::after {
   margin: -4px;
 }
+
+.intro_div img {
+  width: 1rem;
+}
